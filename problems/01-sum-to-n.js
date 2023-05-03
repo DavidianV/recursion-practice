@@ -14,6 +14,23 @@ sumToN(-8)  // returns null
 
 function sumToN(n) {
   // Your code here
+  // if (n === 0) return n++;
+  // n--;
+  // console.log(n + ' Line 20');
+  // let sum = sumToN(n) + n;
+
+  // console.log(n + ' Line 22');
+
+  // return sum;
+  if (n < 0) return null;
+  if (n > 0) {
+    console.log(n + ' Line 27')
+    return n + sumToN(n - 1);
+
+  }
+  console.log(n + ' Line 31');
+  return n;
+
 }
 
 
